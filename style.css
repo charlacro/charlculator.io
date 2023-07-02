@@ -1,0 +1,88 @@
+/* color pallet */
+color {
+    color: #000000 #151515 #F8A145 #F07900 #D35100;
+}
+/* color pallet */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #000000, #151515, #151515, #000000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Background */
+
+/* Container for Calculator */
+.container {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border: 1px solid #D35100;
+    border-radius: 20px;
+    background: #000000;
+    padding: 10px 20px 20px;
+}
+/* Container for Calculator */
+
+/* Display Output */
+.display {
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 25px;
+    background-color: #151515;
+    color: #ffffff;
+    pointer-events: none;
+}
+/* Display Output */
+
+/* Button Grid Position */
+.button {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+/* Button Grid Position */
+
+/* Button Shape and Text */
+.button button {
+    padding: 16px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* Button Shape and Text */
+
+.button button:active {
+    transform: scale(1);
+}
+
+
+/* Color Button */
+.number {
+    background-color: #151515;
+    color: #ffffff;
+}
+
+.operator {
+    background-color: #D35100;
+    color: #000000;
+}
+/* Color Button */
